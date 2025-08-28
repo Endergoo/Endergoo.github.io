@@ -32,9 +32,10 @@ p
     color: #479cec;
 }
 
-ol
+ol li
 {
     color: #497cea;
+    margin-bottom: 5px;
 }
 
 a:any-link
