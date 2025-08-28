@@ -1,0 +1,52 @@
+/* Structure */
+body
+{
+   font-family: Arial, Helvetica, sans-serif; 
+   background: url(images/Background.jpeg);
+   background-size: cover;
+}
+
+#content
+{
+    background:#9AB5D9;
+    width:70%;
+    margin:auto;    /* Center */
+    padding:1%;   /* move text from edge */
+    border-radius:10px;  /* round corner */
+}
+
+/* Tables */
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    border:2px solid #314022;
+    padding:5px 10px;   /* Top and bottom 5, right and left 10. */
+
+}
+
+th
+{
+    background:#465932;
+    color:#CEDEF2;
+}
+
+/* Images */
+#ball-1
+{
+    box-shadow: 7px 7px slategray;
+}
+
+/* Typography */
+h1 
+{
+    color:#314022;
+}
+
+h2
+{
+    color:#465932;
+}

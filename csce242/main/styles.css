@@ -1,0 +1,44 @@
+/* Structure */
+body
+{
+    background-color:#162059;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frontpage
+{
+    background: #2D2A8C;
+    margin:auto;
+    padding:1%;
+    width:70%;
+    border-radius:10px;
+}
+
+/* Typography */
+h1 
+{  
+    color:#5ec1f2;
+    text-decoration: underline;
+    text-underline-offset:5px;
+}
+
+h2
+{
+    color: #37afeb;
+}
+
+p
+{
+    color: #479cec;
+}
+
+ol
+{
+    color: #497cea;
+}
+
+a:any-link
+{
+    text-decoration: none;
+    color: #5c98ec
+}
