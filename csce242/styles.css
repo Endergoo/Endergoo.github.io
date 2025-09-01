@@ -100,7 +100,7 @@ h1, h2, h3
 h2 
 {
     padding-left: 10px;
-    border-left: 4px solid #2f89ff;
+    border-left: 4px solid #ffffff;
 }
 
 /* Assignments Section */
@@ -152,17 +152,18 @@ h2
 .assignment-content 
 {
     padding: 15px;
+    color:#9cc5e9;
 }
 
 .assignment h3 
 {
     margin-top: 0;
-    color: #28d5f8;
+    color: #ffffff;
 }
 
 .assignment h3 a 
 {
-    color: #22aaff;
+    color: #007bff;
     text-decoration: none;
 }
 
