@@ -1,45 +1,236 @@
-/* Structure */
 body
 {
-    background-color:#162059;
+    background: #9cc5e9;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-#frontpage
+#content
 {
-    background: #2D2A8C;
-    margin:auto;
-    padding:1%;
-    width:70%;
-    border-radius:10px;
+    width: 95%;
+    margin: auto;
+    background: rgba(99, 136, 179, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-header
+{
+    background: #3b79ff;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#main-header h1 
+{
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Main Navigation */
+#main-nav ul
+{
+    color:#2287ce;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-nav li
+{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 5px 0;
+    width: 100%;
+}
+
+#main-nav li:first-child
+{
+    border-top: 1px solid white;
+}
+
+#main-nav a
+{
+    color: white;
+    padding: 10px 5px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main-nav a:hover
+{
+    background: rgb(42, 92, 173);
+    color: #ffffff;
+}
+
+/* Intro section */
+#intro 
+{
+    background: rgba(47, 61, 255, 0.753);   
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+#intro h2 
+{
+    color: #17c9ff;
+    margin-top: 0;
 }
 
 /* Typography */
-h1 
-{  
-    color:#5ec1f2;
-    text-decoration: underline;
-    text-underline-offset:5px;
+h1, h2, h3
+{
+    color: #1736ff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2
+h2 
 {
-    color: #37afeb;
+    padding-left: 10px;
+    border-left: 4px solid #2f89ff;
 }
 
-p
+/* Assignments Section */
+.assignments-container 
 {
-    color: #479cec;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-ol li
+.assignment 
 {
-    color: #497cea;
-    margin-bottom: 5px;
+    background: rgba(47, 61, 255, 0.753);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+    flex: 0 0 100%;
+    transition: transform 0.3s ease;
 }
 
-a:any-link
+.assignment:hover 
 {
+    transform: translateY(-5px);
+}
+
+.assignment-image 
+{
+    height: 150px;
+    background-color: #e0e6ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+.assignment-image img
+{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.assignment-content 
+{
+    padding: 15px;
+}
+
+.assignment h3 
+{
+    margin-top: 0;
+    color: #28d5f8;
+}
+
+.assignment h3 a 
+{
+    color: #22aaff;
     text-decoration: none;
-    color: #5c98ec
+}
+
+.assignment h3 a:hover 
+{
+    text-decoration: underline;
+}
+
+.assignment p 
+{
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+/* Larger devices */
+@media only screen and (min-width: 768px)
+{
+    body
+    {
+        background: url(images/background.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #content
+    {
+        width: 85%;
+        max-width: 1200px;
+        padding: 25px;
+    }
+
+    /* Main Nav */
+    #main-nav ul 
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-nav li
+    {
+        flex: 1;
+        border: none;
+        width: auto;
+    }
+
+    #main-nav li:first-child
+    {
+        border: none;
+    }
+
+    #main-nav a
+    {
+        padding: 10px;
+        text-align: center;
+        border-radius: 3px;
+        margin: 0 5px;
+    }
+
+    #main-nav a:hover
+    {
+        background: rgb(46, 154, 255);
+        color: #ffffff;
+        border-bottom: none;
+    }
+
+    /* layout for larger screens */
+    .assignment 
+    {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
