@@ -178,6 +178,80 @@ h2
     font-size: 0.95rem;
 }
 
+.projects-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.projects 
+{
+    background: rgba(47, 61, 255, 0.753);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+    flex: 0 0 100%;
+    transition: transform 0.3s ease;
+}
+
+.projects:hover 
+{
+    transform: translateY(-5px);
+}
+
+.project-image 
+{
+    height: 150px;
+    background-color: #e0e6ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+.project-image img
+{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.project-content 
+{
+    padding: 15px;
+    color:#9cc5e9;
+}
+
+.project h3 
+{
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.project h3 a 
+{
+    color: #24e6ff;
+    text-decoration: none;
+}
+
+.project h3 a:hover 
+{
+    text-decoration: underline;
+}
+
+.project p 
+{
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
 /* Larger devices */
 @media only screen and (min-width: 768px)
 {
@@ -231,6 +305,11 @@ h2
 
     /* layout for larger screens */
     .assignment 
+    {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .projects
     {
         flex: 0 0 calc(50% - 10px);
     }
