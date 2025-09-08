@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+.header 
+{
+    background: #73000a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar 
+{
+    background: #8b1720;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.top-bar .container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.top-bar a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav 
+{
+    background: #73000a;
+    padding: 10px 0;
+}
+
+.nav-container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo 
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu 
+{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-menu a:hover 
+{
+    color: #000000;
+}
+
+/* Start Section */
+.start 
+{
+    background: linear-gradient(rgba(115, 0, 10, 0.7), rgba(115, 0, 10, 0.7)), url('https://place-hold.it/1920x800/73000a/ffffff?text=');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.start-content 
+{
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.start h1 
+{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.start p 
+{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Main Content */
+.container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section 
+{
+    padding: 60px 0;
+}
+
+.section-title 
+{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #73000a;
+    text-align: center;
+}
+
+/* Split Content Section */
+.split-section 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.split-content h2 
+{
+    font-size: 2.2em;
+    color: #73000a;
+    margin-bottom: 20px;
+}
+
+.split-content p 
+{
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.cta-button 
+{
+    background: #000000;
+    color: #73000a;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover 
+{
+    background: #ffffff;
+}
+
+.split-image 
+{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Research Section */
+.research-section 
+{
+    background: #f8f8f8;
+}
+
+.research-bg 
+{
+    background-image: url('https://place-hold.it/600x400/73000a/ffffff?text=Research+Lab');
+}
+
+/* News Section */
+.news-section 
+{
+    background: white;
+}
+
+.news-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.news-item 
+{
+    padding: 30px;
+    background: #f9f9f9;
+    border-left: 4px solid #73000a;
+    border-radius: 5px;
+}
+
+.news-item h3 
+{
+    color: #73000a;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.news-item p 
+{
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer 
+{
+    background: #73000a;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 
+{
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.footer-section a 
+{
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover 
+{
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) 
+{
+    .nav-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #73000a;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-menu li 
+    {
+        margin: 10px 0;
+    }
+
+    .start h1 
+    {
+        font-size: 2.5em;
+    }
+
+    .start p 
+    {
+        font-size: 1.1em;
+    }
+
+    .split-section 
+    {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .split-image 
+    {
+        height: 250px;
+    }
+
+    .section-title 
+    {
+        font-size: 2em;
+    }
+
+    .split-content h2 
+    {
+        font-size: 1.8em;
+    }
+
+    .news-grid 
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .program-buttons 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-button 
+    {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .start 
+    {
+        height: 50vh;
+    }
+
+    .start h1 
+    {
+        font-size: 2em;
+    }
+
+    .section 
+    {
+        padding: 40px 0;
+    }
+}
