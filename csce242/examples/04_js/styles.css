@@ -238,6 +238,23 @@ footer p {
     height:500px;
 }
 
+.clicked
+{
+    background-color: magenta;
+    color:white;
+}
+
+.hclicked
+{
+    background-color: yellow;
+    color:rgb(255, 149, 0);
+}
+
+.sclicked
+{
+    background-color: rgb(0, 89, 255);
+    color:rgb(31, 202, 202);
+}
 
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
