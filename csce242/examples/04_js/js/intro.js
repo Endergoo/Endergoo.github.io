@@ -13,7 +13,7 @@ document.getElementById("btn-click-me").onclick = (event) =>
     event.currentTarget.classList.add("clicked");
 };
 
-document.getElementById("happy-button").onclick = () =>
+    document.getElementById("happy-button").onclick = () =>
     {
         const pFeel = document.getElementById("p-feeling");
         pFeel.innerHTML = "This is HAPPY";
@@ -21,7 +21,7 @@ document.getElementById("happy-button").onclick = () =>
         pFeel.classList.remove("sclicked");
     };
 
-document.getElementById("sad-button").onclick = () =>
+    document.getElementById("sad-button").onclick = () =>
     {
         const pFeel = document.getElementById("p-feeling");
         pFeel.innerHTML = "This is SAD";
@@ -29,10 +29,17 @@ document.getElementById("sad-button").onclick = () =>
         pFeel.classList.remove("hclicked");
     };
 
-document.getElementById("clear-button").onclick = () =>
+    document.getElementById("clear-button").onclick = () =>
     {
         const pFeel = document.getElementById("p-feeling");
         pFeel.innerHTML="";
         pFeel.classList.remvove("sclicked");
         pFeel.classList.remove("hclicked");
     };
+
+    document.getElementById("txt-emotion").onkeyup = (event) =>
+    {
+        const userInput = event.currentTarget.value;
+        document.getElementById("p-emotion").innerHTML = `You are feeling ${userInput}.`
+        document.getElementById("img-emotion").classList.remove("hidden");
+    }

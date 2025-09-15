@@ -1,0 +1,133 @@
+/* Reset and Base Styles */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #4a4a4a;
+}
+
+/* Navigation */
+.navbar 
+{
+    background: #000;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #f0a500;
+}
+
+.nav-container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-link 
+{
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active 
+{
+    color: #fff;
+    border-bottom: 2px solid #f0a500;
+    padding-bottom: 2px;
+}
+
+.logo 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+}
+
+.logo-img 
+{
+    height: 40px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    filter: brightness(1);
+}
+
+/* Main Content Styles */
+.main-content 
+{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header 
+{
+    margin-bottom: 40px;
+}
+
+.contact-title 
+{
+    color: #f0a500;
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.contact-info 
+{
+    margin-top: 40px;
+}
+
+.email 
+{
+    color: #f0a500;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px)
+{
+    .nav-container 
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .page-header 
+    {
+        padding: 6rem 1rem 3rem;
+    }
+    
+    .header-content h1 
+    {
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 480px) 
+{
+    .nav-container 
+    {
+        padding: 0 1rem;
+    }
+}
