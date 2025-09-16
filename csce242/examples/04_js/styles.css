@@ -87,6 +87,11 @@ main {
     color:purple;
 }
 
+.error
+{
+    color:red;
+}
+
 .sub-section a {
     text-decoration:none;
     color:var(--primary-color);
