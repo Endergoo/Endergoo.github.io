@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 6 - If Statements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Assignment 6</h1>
+      <h2>If Statements</h2>
+      <nav>
+        <ul id="menu">
+          <li><a href="#" onclick="showSection('planting')">Exercise 1</a></li>
+          <li><a href="#" onclick="showSection('clock')">Exercise 2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Plant Section -->
+    <section id="planting" class="content-section">
+      <h3>How many days has it been since watering your plant?</h3>
+      <input type="range" id="daysRange" min="1" max="12" value="1">
+      <p id="plantMessage"></p>
+      <img id="plantImage" src="" alt="">
+    </section>
+
+    <!-- Clock Section -->
+    <section id="clock" class="content-section hidden">
+      <h3>Our Digital Clock</h3>
+      <p id="clockTime"></p>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

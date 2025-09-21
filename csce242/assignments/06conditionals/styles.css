@@ -1,0 +1,82 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  background-color: #f5f6ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container 
+{
+  background: #f5f6ef;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 
+{
+  color: #4a6a6a;
+  margin-bottom: 5px;
+}
+
+header h2 
+{
+  color: #d47c7c;
+  margin-top: 0;
+}
+
+nav ul 
+{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav li 
+{
+  display: inline;
+}
+
+nav a 
+{
+  text-decoration: none;
+  color: #4a6a6a;
+  font-weight: bold;
+}
+
+nav a:hover 
+{
+  cursor: pointer;
+  color: #d47c7c;
+}
+
+.content-section 
+{
+  margin-top: 20px;
+}
+
+.hidden 
+{
+  display: none;
+}
+
+#plantImage 
+{
+  margin-top: 15px;
+  width: 120px;
+}
+
+footer 
+{
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+}
