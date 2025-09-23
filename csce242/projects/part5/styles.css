@@ -96,6 +96,7 @@ body
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
@@ -187,11 +188,13 @@ body
     background: #3a3a3a;
     border-radius: 15px;
     overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .listing-card:hover 
 {
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 15px 35px rgba(240,165,0,0.2);
 }
 
@@ -259,12 +262,14 @@ body
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 5px 15px rgba(240,165,0,0.3);
 }
 
 .see-more-btn:hover 
 {
     background: #fff;
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 8px 25px rgba(240,165,0,0.4);
 }
 

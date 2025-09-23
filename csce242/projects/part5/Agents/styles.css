@@ -112,11 +112,13 @@ body
     background: #3a3a3a;
     border-radius: 15px;
     overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 .agent-card:hover 
 {
+    transition: box-shadow 0.2s ease-in-out ;
     box-shadow: 0 15px 35px rgba(240,165,0,0.2);
 }
 
