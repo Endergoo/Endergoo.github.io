@@ -65,7 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add hover effects to listing cards
     const listingCards = document.querySelectorAll('.listing-card');
-    listingCards.forEach(card => {
+    listingCards.forEach(card => 
+        {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px)';
         });
