@@ -19,6 +19,11 @@ body
     background-color: #000000;
     padding: 15px 0;
     border-bottom: 2px solid #f0a500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-container 
@@ -71,6 +76,42 @@ body
     object-fit: contain; 
 }
 
+/* Slideshow Background */
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 0.6;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+}
+
 /* Top Section */
 .top 
 {
@@ -92,7 +133,7 @@ body
 
 .search-container 
 {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,1);
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -155,6 +196,44 @@ body
 .filter-select:focus 
 {
     border-color: #f0a500;
+}
+
+/* Slideshow Navigation Dots */
+.slideshow-nav {
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.nav-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(240, 165, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-dot.active {
+    background: #f0a500;
+    transform: scale(1.3);
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(240, 165, 0, 0.8);
+}
+
+.nav-dot:hover {
+    background: #f0a500;
+    transform: scale(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 /* Featured Listings Section */
