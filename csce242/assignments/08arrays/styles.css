@@ -1,0 +1,280 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*nicer font*/
+}
+
+body 
+{
+    background-color: #0a0a2a;
+    color: #e0e0ff;
+    padding: 20px;
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    min-height: 100vh;
+}
+
+header 
+{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(16, 16, 48, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(64, 156, 255, 0.3);
+    border: 1px solid #2a4a7a;
+}
+
+h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #64b5f6;
+    text-shadow: 0 0 10px rgba(100, 181, 246, 0.7);
+}
+
+.subtitle 
+{
+    font-size: 1.2rem;
+    color: #bbdefb;
+    margin-bottom: 15px;
+}
+
+.credit 
+{
+    font-size: 0.9rem;
+    color: #90a4ae;
+    font-style: italic;
+}
+
+.gallery 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space-card 
+{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(25, 25, 60, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3d5a80;
+    cursor: pointer;
+}
+
+.space-card:hover 
+{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(64, 156, 255, 0.4);
+}
+
+.space-image 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.space-overlay 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(10, 10, 40, 0.9), transparent);
+    color: white;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.space-card:hover .space-overlay 
+{
+    transform: translateY(0);
+}
+
+.space-name 
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #64b5f6;
+}
+
+.explore-text 
+{
+    font-size: 0.9rem;
+    color: #bbdefb;
+}
+
+.popup-overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 20, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.popup-content 
+{
+    background: linear-gradient(145deg, #1a1a4a, #0f0f30);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 30px rgba(64, 156, 255, 0.5);
+    border: 1px solid #3d5a80;
+    position: relative;
+    animation: popup-appear 0.4s ease-out;
+}
+
+.popup-header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3d5a80;
+}
+
+.popup-title 
+{
+    font-size: 1.8rem;
+    color: #64b5f6;
+    text-shadow: 0 0 8px rgba(100, 181, 246, 0.5);
+}
+
+.close-btn 
+{
+    font-size: 1.8rem;
+    color: #bbdefb;
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-btn:hover 
+{
+    color: #ff5252;
+    background: rgba(255, 82, 82, 0.1);
+}
+
+.popup-image 
+{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #3d5a80;
+}
+
+.popup-info 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-text 
+{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #bbdefb;
+    padding: 10px;
+    background: rgba(30, 30, 70, 0.5);
+    border-radius: 8px;
+}
+
+.popup-details 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.detail-item 
+{
+    padding: 8px;
+    background: rgba(40, 40, 80, 0.5);
+    border-radius: 6px;
+}
+
+.detail-label 
+{
+    font-weight: bold;
+    color: #64b5f6;
+}
+
+.hidden 
+{
+    display: none;
+}
+
+footer 
+{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #90a4ae;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a4a7a;
+}
+
+.mission-badge 
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 152, 0, 0.9);
+    color: #0a0a2a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) 
+{
+    .popup-details 
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 
+    {
+        font-size: 2rem;
+    }
+    
+    .gallery 
+    {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
