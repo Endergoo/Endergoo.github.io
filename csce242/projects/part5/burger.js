@@ -1,36 +1,47 @@
-// Hamburger Menu Toggle
-document.addEventListener('DOMContentLoaded', function() {
+// Hamburger Menu with the help of w3schools and the in class example
+document.addEventListener('DOMContentLoaded', function() 
+{
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function() {
+    if (hamburger && navLinks) 
+        {
+        hamburger.addEventListener('click', function(e) 
+        {
+            e.stopPropagation();
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
         });
         
         // Close menu when clicking on a link
         const navLinkElements = navLinks.querySelectorAll('.nav-link');
-        navLinkElements.forEach(link => {
-            link.addEventListener('click', function() {
+        navLinkElements.forEach(link => 
+        {
+            link.addEventListener('click', function() 
+            {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
             });
         });
         
         // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const isClickInsideNav = navLinks.contains(event.target) || hamburger.contains(event.target);
+        document.addEventListener('click', function(event) 
+        {
+            const navbar = document.querySelector('.navbar');
+            const isClickInsideNav = navbar.contains(event.target);
             
-            if (!isClickInsideNav && navLinks.classList.contains('active')) {
+            if (!isClickInsideNav && navLinks.classList.contains('active')) 
+            {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
             }
         });
         
         // Close menu when window is resized to desktop
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
+        window.addEventListener('resize', function() 
+        {
+            if (window.innerWidth > 768) 
+            {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
             }
