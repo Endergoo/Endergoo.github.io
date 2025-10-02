@@ -1,0 +1,13 @@
+[
+    {
+     "_id":1,
+     "img":"listing1.jpeg",
+     "type":"house",
+     "price":350000,
+     "beds":3,
+     "baths":2,
+     "sqft":1800,
+     "available?":"yes",
+     "location":"123 Oak Street, Springfield, IL 62701"
+    }
+]
