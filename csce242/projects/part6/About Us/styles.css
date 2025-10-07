@@ -131,7 +131,7 @@ body
 
 .logo-img 
 {
-    height: 50px; 
+    height: 75px; 
     width: auto; 
     max-width: 120px; 
     object-fit: contain; 
@@ -157,6 +157,7 @@ body
     font-weight: normal;
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .text-block 
@@ -240,6 +241,7 @@ body
     .section-title 
     {
         font-size: 36px;
+        margin-top: 0px;
     }
     
     .text-block 

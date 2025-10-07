@@ -20,6 +20,11 @@ body
     background-color: #000000;
     padding: 15px 0;
     border-bottom: 2px solid #f0a500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-container 
@@ -29,22 +34,41 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 20px;
+}
+
+/* Hide mobile elements on desktop */
+.nav-header 
+{
+    display: none;
+}
+
+.mobile-nav 
+{
+    display: none;
+}
+
+.nav-links 
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 .nav-link 
 {
     color: #f0a500;
     text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .nav-link:hover, .nav-link.active 
 {
     color: #fff;
-    border-bottom: 2px solid #f0a500;
-    padding-bottom: 2px;
+    transition: 0.25s;
 }
 
 .logo 
@@ -57,11 +81,45 @@ body
 
 .logo-img 
 {
-    height: 40px;
-    width: auto;
-    max-width: 120px;
-    object-fit: contain;
-    filter: brightness(1);
+    height: 75px; 
+    width: auto; 
+    max-width: 120px; 
+    object-fit: contain; 
+}
+
+/* Hamburger Menu */
+.hamburger 
+{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span 
+{
+    width: 25px;
+    height: 3px;
+    background-color: #f0a500;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* animation for the burger */
+.hamburger.active span:nth-child(1) 
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) 
+{
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) 
+{
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Main Content Styles */
@@ -110,10 +168,57 @@ body
 /* Responsive Design */
 @media (max-width: 768px)
 {
+    .navbar 
+    {
+        position: relative;
+        padding: 10px 0 0 0;
+    }
+    
     .nav-container 
     {
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
+        padding: 0 15px;
+        position: relative;
+    }
+    
+    /* Hide desktop navigation on mobile */
+    .nav-container > .nav-link,
+    .nav-container > .logo 
+    {
+        display: none;
+    }
+    
+    /* Show mobile navigation header */
+    .nav-header 
+    {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .hamburger 
+    {
+        display: flex;
+    }
+    
+    /* Mobile navigation links styling */
+    .mobile-nav 
+    {
+        display: none !important;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid #f0a500;
+        background: #000000;
+    }
+    
+    .mobile-nav.active 
+    {
+        display: flex !important;
     }
     
     .page-header 
