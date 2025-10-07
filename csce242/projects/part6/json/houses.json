@@ -9,5 +9,29 @@
      "sqft":1800,
      "available?":"yes",
      "location":"123 Oak Street, Springfield, IL 62701"
+    },
+
+    {
+        "_id":2,
+        "img":"listing2.jpeg",
+        "type":"house",
+        "price":275000,
+        "beds":2,
+        "baths":2,
+        "sqft":1400,
+        "available?":"yes",
+        "location":"456 Pine Avenue, Madison, WI 53703"
+    },
+
+    {
+        "_id":3,
+        "img":"listing3.jpeg",
+        "type":"house",
+        "price":525000,
+        "beds":4,
+        "baths":3,
+        "sqft":2500,
+        "available?":"yes",
+        "location":"789 Maple Drive, Columbus, OH 43215"
     }
 ]

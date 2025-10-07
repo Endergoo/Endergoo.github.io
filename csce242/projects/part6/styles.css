@@ -67,8 +67,7 @@ body
 .nav-link:hover, .nav-link.active 
 {
     color: #fff;
-    border-bottom: 2px solid #f0a500;
-    padding-bottom: 2px;
+    transition: 0.25s;
 }
 
 .logo 
@@ -81,7 +80,7 @@ body
 
 .logo-img 
 {
-    height: 50px; 
+    height: 75px; 
     width: auto; 
     max-width: 120px; 
     object-fit: contain; 
@@ -218,12 +217,12 @@ body
 .search-btn 
 {
     position: absolute;
-    right: 10px;
+    right: -10px;
     top: 50%;
     transform: translateY(-50%);
     background: #f0a500;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 2rem;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
@@ -557,7 +556,7 @@ body
     
     .search-container 
     {
-        padding: 1rem;
+        padding: 2.75rem;
         margin-top: 1rem;
     }
     
@@ -569,7 +568,8 @@ body
     
     .search-btn 
     {
-        padding: 0.4rem 0.8rem;
+        right: -2.5rem;
+        padding: 0.5rem 0.7rem;
         font-size: 0.9rem;
     }
     
