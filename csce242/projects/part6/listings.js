@@ -9,7 +9,7 @@ async function loadListings()
         const response = await fetch('https://raw.githubusercontent.com/Endergoo/Endergoo.github.io/main/csce242/projects/part6/json/houses.json');
         
         if (!response.ok) 
-            {
+        {
             throw new Error('Failed to load listings');
         }
         
@@ -32,7 +32,7 @@ function displayListings(listings)
     listingsGrid.innerHTML = '';
 
     listings.forEach(listing => 
-        {
+    {
         const listingCard = document.createElement('div');
         listingCard.className = 'listing-card';
         listingCard.innerHTML = `
@@ -65,7 +65,7 @@ function filterListings()
     const baths = document.getElementById('baths-filter').value;
 
     filteredListings = allListings.filter(listing => 
-        {
+    {
         // location 
         if (location && !listing.location.toLowerCase().includes(location)) 
         {
