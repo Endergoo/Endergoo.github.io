@@ -35,7 +35,8 @@ function displayListings(listings)
     {
         const listingCard = document.createElement('div');
         listingCard.className = 'listing-card';
-        listingCard.innerHTML = `
+        listingCard.innerHTML = 
+        `
             <div class="listing-image">
                 <div class="house-img">
                     <a href="#"><img class="house-picture" src="../json/images/${listing.img}" alt="Property"></a>
