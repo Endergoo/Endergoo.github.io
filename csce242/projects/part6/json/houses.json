@@ -34,8 +34,8 @@
     },
     {
         "_id":4,
-        "img":"listing4.jpeg",
-        "type":"apartment",
+        "img":"listing4.jpg",
+        "type":"house",
         "price":185000,
         "beds":1,
         "baths":1,
@@ -45,7 +45,7 @@
     },
     {
         "_id":5,
-        "img":"listing5.jpeg",
+        "img":"listing5.jpg",
         "type":"condo",
         "price":425000,
         "beds":3,
@@ -56,7 +56,7 @@
     },
     {
         "_id":6,
-        "img":"listing6.jpeg",
+        "img":"listing6.jpg",
         "type":"townhouse",
         "price":310000,
         "beds":2,
@@ -67,7 +67,7 @@
     },
     {
         "_id":7,
-        "img":"listing7.jpeg",
+        "img":"listing7.jpg",
         "type":"house",
         "price":680000,
         "beds":5,
@@ -78,7 +78,7 @@
     },
     {
         "_id":8,
-        "img":"listing8.jpeg",
+        "img":"listing8.jpg",
         "type":"apartment",
         "price":225000,
         "beds":2,
