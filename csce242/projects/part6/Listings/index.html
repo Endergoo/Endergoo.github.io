@@ -53,53 +53,55 @@
                 
                 <div class="filter-group">
                     <label>Location</label>
-                    <input type="text" placeholder="Example location" class="sidebar-input">
+                    <input type="text" placeholder="Example location" class="sidebar-input" id="location-filter">
                 </div>
 
                 <div class="filter-group">
                     <label>Price Range</label>
-                    <select class="sidebar-select">
-                        <option>Any Price</option>
-                        <option>$0 - $50,000</option>
-                        <option>$50,000 - $100,000</option>
-                        <option>$100,000 - $200,000</option>
-                        <option>$200,000+</option>
+                    <select class="sidebar-select" id="price-filter">
+                        <option value="">Any Price</option>
+                        <option value="0-50000">$0 - $50,000</option>
+                        <option value="50000-100000">$50,000 - $100,000</option>
+                        <option value="100000-200000">$100,000 - $200,000</option>
+                        <option value="200000-300000">$200,000 - $300,000</option>
+                        <option value="300000-500000">$300,000 - $500,000</option>
+                        <option value="500000-999999999">$500,000+</option>
                     </select>
                 </div>
 
                 <div class="filter-group">
                     <label>Property Type</label>
-                    <select class="sidebar-select">
-                        <option>All Types</option>
-                        <option>House</option>
-                        <option>Apartment</option>
-                        <option>Condo</option>
-                        <option>Townhouse</option>
+                    <select class="sidebar-select" id="type-filter">
+                        <option value="">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="townhouse">Townhouse</option>
                     </select>
                 </div>
 
                 <div class="filter-group">
                     <label>Bedrooms</label>
-                    <select class="sidebar-select">
-                        <option>Any</option>
-                        <option>1+</option>
-                        <option>2+</option>
-                        <option>3+</option>
-                        <option>4+</option>
+                    <select class="sidebar-select" id="beds-filter">
+                        <option value="">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
                     </select>
                 </div>
 
                 <div class="filter-group">
                     <label>Bathrooms</label>
-                    <select class="sidebar-select">
-                        <option>Any</option>
-                        <option>1+</option>
-                        <option>2+</option>
-                        <option>3+</option>
+                    <select class="sidebar-select" id="baths-filter">
+                        <option value="">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
                     </select>
                 </div>
 
-                <button class="apply-filters-btn">Apply Filters</button>
+                <button class="apply-filters-btn" id="apply-filters">Apply Filters</button>
             </div>
         </aside>
 
@@ -107,124 +109,11 @@
         <main class="listings-main">
             <div class="listings-header">
                 <h2>Property Listings</h2>
-                <div class="results-count">Showing 24 results</div>
+                <div class="results-count">Loading...</div>
             </div>
 
             <div class="listings-grid">
-                <!-- Listing Cards -->
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">
-                            <a href="#"><img class ="house-picture" src="images/listing1.jpeg"></a>
-                        </div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">
-                            <a href="#"><img class ="house-picture"src="images/listing2.jpg"></a>
-                        </div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">
-                            <a href="#"><img class ="house-picture"src="images/listing3.jpg"></a>
-                        </div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
-
-                <div class="listing-card">
-                    <div class="listing-image">
-                        <div class="house-img">Will add different listings later on</div>
-                        <div class="listing-badge">For Sale</div>
-                    </div>
-                    <div class="listing-info">
-                        <div class="price">$100,000</div>
-                        <div class="details">x Bed | x Bath | 1000 sqft | Available</div>
-                        <div class="address">111 Goober Dr, Example, Ex 12345</div>
-                    </div>
-                </div>
+                <!-- Listings will be dynamically inserted here -->
             </div>
 
             <!-- Pagination -->
@@ -239,5 +128,6 @@
     </div>
 
     <script src="../burger.js"></script>
+    <script src="../listings.js"></script>
 </body>
 </html>

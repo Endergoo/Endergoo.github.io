@@ -12,7 +12,7 @@
     },
     {
         "_id":2,
-        "img":"listing2.jpeg",
+        "img":"listing2.jpg",
         "type":"house",
         "price":275000,
         "beds":2,
@@ -23,7 +23,7 @@
     },
     {
         "_id":3,
-        "img":"listing3.jpeg",
+        "img":"listing3.jpg",
         "type":"house",
         "price":525000,
         "beds":4,
