@@ -80,7 +80,7 @@
         "_id":8,
         "img":"listing8.jpg",
         "type":"apartment",
-        "price":225000,
+        "price":1225000,
         "beds":2,
         "baths":1,
         "sqft":1100,
