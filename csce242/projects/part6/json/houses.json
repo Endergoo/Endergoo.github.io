@@ -10,10 +10,9 @@
      "available?":"yes",
      "location":"123 Oak Street, Springfield, IL 62701"
     },
-
     {
         "_id":2,
-        "img":"listing2.jpeg",
+        "img":"listing2.jpg",
         "type":"house",
         "price":275000,
         "beds":2,
@@ -22,10 +21,9 @@
         "available?":"yes",
         "location":"456 Pine Avenue, Madison, WI 53703"
     },
-
     {
         "_id":3,
-        "img":"listing3.jpeg",
+        "img":"listing3.jpg",
         "type":"house",
         "price":525000,
         "beds":4,
@@ -33,5 +31,60 @@
         "sqft":2500,
         "available?":"yes",
         "location":"789 Maple Drive, Columbus, OH 43215"
+    },
+    {
+        "_id":4,
+        "img":"listing4.jpg",
+        "type":"house",
+        "price":185000,
+        "beds":1,
+        "baths":1,
+        "sqft":850,
+        "available?":"yes",
+        "location":"321 Elm Boulevard, Austin, TX 78701"
+    },
+    {
+        "_id":5,
+        "img":"listing5.jpg",
+        "type":"condo",
+        "price":425000,
+        "beds":3,
+        "baths":2,
+        "sqft":1650,
+        "available?":"yes",
+        "location":"654 Cedar Lane, Portland, OR 97201"
+    },
+    {
+        "_id":6,
+        "img":"listing6.jpg",
+        "type":"townhouse",
+        "price":310000,
+        "beds":2,
+        "baths":2,
+        "sqft":1550,
+        "available?":"no",
+        "location":"987 Birch Court, Denver, CO 80202"
+    },
+    {
+        "_id":7,
+        "img":"listing7.jpg",
+        "type":"house",
+        "price":680000,
+        "beds":5,
+        "baths":4,
+        "sqft":3200,
+        "available?":"yes",
+        "location":"147 Willow Way, Seattle, WA 98101"
+    },
+    {
+        "_id":8,
+        "img":"listing8.jpg",
+        "type":"apartment",
+        "price":1225000,
+        "beds":2,
+        "baths":1,
+        "sqft":1100,
+        "available?":"yes",
+        "location":"258 Spruce Street, Boston, MA 02108"
     }
 ]
