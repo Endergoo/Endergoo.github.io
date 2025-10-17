@@ -19,28 +19,27 @@
             <a href="../About Us/index.html" class="nav-link">About Us</a>
             <a href="#" class="nav-link active">Contact</a>
             <a href="#" class="nav-link">Sign In</a>
-
-    <!-- Mobile Navigation Header (hidden by default) -->
-         <div class="nav-header">
-            <div class="logo">
-                <img src="images/MBF.png" alt="The MBF" class="logo-img">
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <!-- Mobile Navigation Header (hidden by default) -->
+            <div class="nav-header">
+                <div class="logo">
+                    <img src="images/MBF.png" alt="The MBF" class="logo-img">
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Mobile Navigation Links (separate container) -->
-    <div class="mobile-nav" id="navLinks">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../Listings/index.html" class="nav-link">Listings</a>
-        <a href="../Agents/index.html" class="nav-link">Agents</a>
-        <a href="../About Us/index.html" class="nav-link">About Us</a>
-        <a href="#" class="nav-link acive">Contact</a>
-        <a href="#" class="nav-link">Sign In</a>
+   
+        <!-- Mobile Navigation Links (separate container) -->
+        <div class="mobile-nav" id="navLinks">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../Listings/index.html" class="nav-link">Listings</a>
+            <a href="../Agents/index.html" class="nav-link">Agents</a>
+            <a href="../About Us/index.html" class="nav-link">About Us</a>
+            <a href="#" class="nav-link active">Contact</a>
+            <a href="#" class="nav-link">Sign In</a>
         </div>
     </nav>
 
@@ -48,17 +47,20 @@
         <div class="contact-header">
             <h1 class="contact-title">Contact Us</h1>
         </div>
-        
+       
         <div class="contact-info">
             <p class="email">MBFRealty@email.com</p>
             <p class="phone">(864)376-1317</p>
         </div>
 
-         <!-- New Contact Form and Map Section -->
+        <!-- New Contact Form and Map Section -->
         <div class="content-wrapper">
             <div class="form-section">
                 <h2>Send Us a Message</h2>
                 <form id="contactForm">
+                    <!-- Web3Forms Access Key - REPLACE WITH YOUR ACTUAL KEY -->
+                    <input type="hidden" name="access_key" value="mlshbcqw9rpulk">
+                    
                     <div class="form-group">
                         <label for="name">Name *</label>
                         <input type="text" id="name" name="name" required placeholder="Your full name">
@@ -108,6 +110,6 @@
     </main>
 
     <script src="../burger.js"></script>
-    <script src="../contact.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
