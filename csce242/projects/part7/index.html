@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBF Realty - Find Your Dream Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Desktop Navigation (default) -->
+            <a href="#" class="nav-link active">Home</a>
+            <a href="Listings/index.html" class="nav-link">Listings</a>
+            <a href="Agents/index.html" class="nav-link">Agents</a>
+            <div class="logo">
+                <img src="images/MBF.png" alt="The MBF" class="logo-img">
+            </div>
+            <a href="About Us/index.html" class="nav-link">About Us</a>
+            <a href="Contact/index.html" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Sign In</a>
+            
+            <!-- Mobile Navigation Header (hidden by default) -->
+            <div class="nav-header">
+                <div class="logo">
+                    <img src="images/MBF.png" alt="The MBF" class="logo-img">
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Links (separate container) -->
+        <div class="mobile-nav" id="navLinks">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="Listings/index.html" class="nav-link">Listings</a>
+            <a href="Agents/index.html" class="nav-link">Agents</a>
+            <a href="About Us/index.html" class="nav-link">About Us</a>
+            <a href="Contact/index.html" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- Top Section with Slideshow -->
+    <section class="top">
+        <!-- Slideshow Background -->
+        <div class="slideshow-container">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="slideshow-nav">
+            <div class="nav-dot active" data-slide="0"></div>
+            <div class="nav-dot" data-slide="1"></div>
+            <div class="nav-dot" data-slide="2"></div>
+            <div class="nav-dot" data-slide="3"></div>
+            <div class="nav-dot" data-slide="4"></div>
+        </div>
+
+        <div class="top-content">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Location" class="location-input">
+                    <button class="search-btn">&#128269</button>
+                </div>
+                <div class="filter-container">
+                    <select class="filter-select">
+                        <option>Price</option>
+                        <option>$0 - $100,000</option>
+                        <option>$100,000 - $200,000</option>
+                        <option>$200,000+</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Beds</option>
+                        <option>1 Bed</option>
+                        <option>2 Beds</option>
+                        <option>3+ Beds</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Baths</option>
+                        <option>1 Bath</option>
+                        <option>2 Baths</option>
+                        <option>3+ Baths</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Listings -->
+    <section class="featured-section">
+        <h2 class="section-title">Featured Listings</h2>
+        <div class="listings-grid">
+            <!-- Listing 1 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">                  
+                        <a href="#"><img class="house-picture" src="Listings/images/listing1.jpeg" alt="Property 1"></a>
+                    </div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$350,000</div>
+                    <div class="details">3 Bed | 2 Bath | 1800 sqft | Available</div>
+                    <div class="address">123 Oak Street, Springfield, IL 62701</div>
+                </div>
+            </div>
+
+            <!-- Listing 2 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">                       
+                        <a href="#"><img class="house-picture" src="Listings/images/listing2.jpg" alt="Property 2"></a>
+                    </div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$275,000</div>
+                    <div class="details">2 Bed | 2 Bath | 1400 sqft | Available</div>
+                    <div class="address">456 Pine Avenue, Madison, WI 53703</div>
+                </div>
+            </div>
+
+            <!-- Listing 3 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">
+                        <a href="#"><img class="house-picture" src="Listings/images/listing3.jpg" alt="Property 3">
+                    </a></div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$525,000</div>
+                    <div class="details">4 Bed | 3 Bath | 2500 sqft | Available</div>
+                    <div class="address">789 Maple Drive, Columbus, OH 43215</div>
+                </div>
+            </div>
+
+            <!-- Listing 4 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">Coming Soon - New Listings</div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$425,000</div>
+                    <div class="details">3 Bed | 2.5 Bath | 2100 sqft | Available</div>
+                    <div class="address">321 Elm Street, Nashville, TN 37201</div>
+                </div>
+            </div>
+
+            <!-- Listing 5 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">Coming Soon - New Listings</div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$185,000</div>
+                    <div class="details">2 Bed | 1 Bath | 1200 sqft | Available</div>
+                    <div class="address">654 Cedar Lane, Richmond, VA 23220</div>
+                </div>
+            </div>
+
+            <!-- Listing 6 -->
+            <div class="listing-card">
+                <div class="listing-image">
+                    <div class="house-img">Coming Soon - New Listings</div>
+                </div>
+                <div class="listing-info">
+                    <div class="price">$680,000</div>
+                    <div class="details">5 Bed | 4 Bath | 3200 sqft | Available</div>
+                    <div class="address">987 Birch Court, Atlanta, GA 30309</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="see-more-container">
+            <button class="see-more-btn"><a href="Listings/index.html">See More --></a></button>
+        </div>
+    </section>
+    <script src="slideshow.js"></script>
+    <script src="burger.js"></script>
+</body>
+</html>

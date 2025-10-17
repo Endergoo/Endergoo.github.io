@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBF Realty - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../Listings/index.html" class="nav-link">Listings</a>
+            <a href="../Agents/index.html" class="nav-link">Agents</a>
+            <div class="logo">
+                <img src="images/MBF.png" alt="The MBF" class="logo-img">
+            </div>
+            <a href="../About Us/index.html" class="nav-link">About Us</a>
+            <a href="#" class="nav-link active">Contact</a>
+            <a href="#" class="nav-link">Sign In</a>
+
+    <!-- Mobile Navigation Header (hidden by default) -->
+         <div class="nav-header">
+            <div class="logo">
+                <img src="images/MBF.png" alt="The MBF" class="logo-img">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation Links (separate container) -->
+    <div class="mobile-nav" id="navLinks">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../Listings/index.html" class="nav-link">Listings</a>
+        <a href="../Agents/index.html" class="nav-link">Agents</a>
+        <a href="../About Us/index.html" class="nav-link">About Us</a>
+        <a href="#" class="nav-link acive">Contact</a>
+        <a href="#" class="nav-link">Sign In</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="contact-header">
+            <h1 class="contact-title">Contact Us</h1>
+        </div>
+        
+        <div class="contact-info">
+            <p class="email">MBFRealty@email.com</p>
+            <p class="phone">(864)376-1317</p>
+        </div>
+
+         <!-- New Contact Form and Map Section -->
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="How can we help you?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div id="responseMessage" class="message"></div>
+            </div>
+
+            <div class="map-section">
+                <h2>Our Location</h2>
+                <p class="location-text">
+                    Visit us in Columbia, South Carolina
+                </p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106115.31331326848!2d-81.12548638271022!3d34.00071460568349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a5697931d1e3%3A0x66b7f8cc9a84496d!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1697480000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../burger.js"></script>
+    <script src="../contact.js"></script>
+</body>
+</html>
